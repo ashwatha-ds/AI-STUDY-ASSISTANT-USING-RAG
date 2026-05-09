@@ -1,6 +1,6 @@
-import fitz  # PyMuPDF
+import fitz  
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.schema import Document
+from langchain_core.documents import Document
 import io
 
 
