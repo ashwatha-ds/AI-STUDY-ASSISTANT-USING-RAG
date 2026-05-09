@@ -59,7 +59,7 @@ Student Question: {question}
 Provide a helpful, educational answer:"""
 
     response = client.chat.completions.create(
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_content},
@@ -93,7 +93,7 @@ Document text:
 Provide the summary now:"""
 
     response = client.chat.completions.create(
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
         max_tokens=1500,
@@ -139,7 +139,7 @@ Document text:
 Return only the JSON, no other text:"""
 
     response = client.chat.completions.create(
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.5,
         max_tokens=2000,
